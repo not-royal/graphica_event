@@ -12,6 +12,146 @@
 
 <body>
 
+
+
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <!-- <a class="navbar-brand" href="#">Project Name</a> -->
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                  </ul>
+            </nav>
+        </div>
+
+        <!--  -->
+        <div class="row" style=" margin-top: 56px;">
+            <div class="col-lg-2">
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">Task List</div>
+                    <div class="card-body">
+                        <form id="form" action=""></form>
+                            <div class="row" style=" margin-bottom: 7px;">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Task Here">
+                                </div>
+                                <div class="input-group">
+                                    <div class="form-check">
+                                        <label for="optradio1" style=" margin-right: 25px;"><b>Importance :</b></label>
+                                        <label class="form-check-label" style=" margin-right: 20px;">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio1" value="1">Impotant
+                                        </label>
+                                        <label class="form-check-label" style=" margin-right: 20px;">
+                                            <input type="radio" class="form-check-input" id="radio2" name="optradio1" value="2" checked>Not-Impotant
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="optradio2" style=" margin-right: 25px;"><b>Urgency :</b></label>
+                                        <label class="form-check-label" style=" margin-right: 20px;">
+                                            <input type="radio" class="form-check-input" id="radio3" name="optradio2" value="3">Urgent
+                                        </label>
+                                        <label class="form-check-label" style=" margin-right: 20px;">
+                                            <input type="radio" class="form-check-input" id="radio4" name="optradio2" value="4" checked>Not-Urgent
+                                        </label>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn btn-warning"><i class="fas fa-pen"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="fas fa-minus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" id="add" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Add Task</button>
+                        <button type="button" class="btn btn-success">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Task</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <input type="text" id="task" class="form-control" placeholder="Enter Your Task Here">
+                        </div><br>
+                        <div class="form-check">
+                            <label for="optradio1" style=" margin-right: 25px;"><b>Importance :</b></label>
+                            <label class="form-check-label" style=" margin-right: 20px;">
+                                <input type="radio" class="form-check-input" id="radio1" name="optradio1" value="1">Impotant
+                            </label>
+                            <label class="form-check-label" style=" margin-right: 20px;">
+                                <input type="radio" class="form-check-input" id="radio2" name="optradio1" value="2" checked>Not-Impotant
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label for="optradio2" style=" margin-right: 25px;"><b>Urgency :</b></label>
+                            <label class="form-check-label" style=" margin-right: 20px;">
+                                <input type="radio" class="form-check-input" id="radio3" name="optradio2" value="3">Urgent
+                            </label>
+                            <label class="form-check-label" style=" margin-right: 20px;">
+                                <input type="radio" class="form-check-input" id="radio4" name="optradio2" value="4" checked>Not-Urgent
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" onclick="addTask()" class="btn btn-success" data-dismiss="modal">Save</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- matrix -->
+    <div class="graph">
+        <div class="ypositive">
+            <div class="ele" id="now">sample text
+            </div>
+            <div class="ele" id="shed">sample text
+            </div>
+        
+        </div>
+        <div class="ynegitive">      
+            <div class="ele" id="later">sample text
+            </div>
+            <div class="ele" id="dont">sample text
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     <div class="graph">
         <div class="ypositive">
             <div class="ele" id="now">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sapiente quos est quia, qui,
